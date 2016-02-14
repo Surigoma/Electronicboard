@@ -284,6 +284,7 @@ namespace ElectronicBoard
         {
             master.Event("V_Time_Changed", V_Time.Value);
         }
+        
 
         private void Event(string EventName, object arg)
         {

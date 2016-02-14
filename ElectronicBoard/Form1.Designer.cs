@@ -69,6 +69,7 @@
             this.M_Filename = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.P_FlowLayout = new System.Windows.Forms.FlowLayoutPanel();
+            this.P_Image = new ElectronicBoard.InterpolatedPictureBox();
             this.P_ButtonLayout = new System.Windows.Forms.Panel();
             this.P_Fill = new System.Windows.Forms.Button();
             this.P_Erase = new System.Windows.Forms.Button();
@@ -101,7 +102,6 @@
             this.PanelXNum = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.SoundType = new System.Windows.Forms.ComboBox();
-            this.P_Image = new ElectronicBoard.InterpolatedPictureBox();
             this.PluginsTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.S_Interval)).BeginInit();
@@ -120,6 +120,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.M_PrevSize)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.P_FlowLayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.P_Image)).BeginInit();
             this.P_ButtonLayout.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.V_Time)).BeginInit();
@@ -130,7 +131,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelYNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelXNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.P_Image)).BeginInit();
             this.SuspendLayout();
             // 
             // PluginsTab
@@ -225,7 +225,6 @@
             this.S_Text.Name = "S_Text";
             this.S_Text.Size = new System.Drawing.Size(598, 19);
             this.S_Text.TabIndex = 1;
-            this.S_Text.Text = "機械電子工学科。";
             // 
             // label11
             // 
@@ -711,7 +710,6 @@
             this.M_Filename.Name = "M_Filename";
             this.M_Filename.Size = new System.Drawing.Size(433, 19);
             this.M_Filename.TabIndex = 3;
-            this.M_Filename.Text = "C:\\Users\\根岸\\Desktop\\aviutl\\ffdshow.avi";
             // 
             // tabPage3
             // 
@@ -733,6 +731,20 @@
             this.P_FlowLayout.Name = "P_FlowLayout";
             this.P_FlowLayout.Size = new System.Drawing.Size(655, 305);
             this.P_FlowLayout.TabIndex = 4;
+            // 
+            // P_Image
+            // 
+            this.P_Image.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.P_Image.Interpolation = System.Drawing.Drawing2D.InterpolationMode.Bilinear;
+            this.P_Image.Location = new System.Drawing.Point(3, 3);
+            this.P_Image.Name = "P_Image";
+            this.P_Image.Size = new System.Drawing.Size(100, 50);
+            this.P_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.P_Image.TabIndex = 6;
+            this.P_Image.TabStop = false;
+            this.P_Image.MouseDown += new System.Windows.Forms.MouseEventHandler(this.P_Image_MouseDown);
+            this.P_Image.MouseMove += new System.Windows.Forms.MouseEventHandler(this.P_Image_MouseMove);
+            this.P_Image.MouseUp += new System.Windows.Forms.MouseEventHandler(this.P_Image_MouseUp);
             // 
             // P_ButtonLayout
             // 
@@ -1165,20 +1177,6 @@
             this.SoundType.TabIndex = 11;
             this.SoundType.SelectedIndexChanged += new System.EventHandler(this.SoundType_SelectedIndexChanged);
             // 
-            // P_Image
-            // 
-            this.P_Image.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.P_Image.Interpolation = System.Drawing.Drawing2D.InterpolationMode.Bilinear;
-            this.P_Image.Location = new System.Drawing.Point(3, 3);
-            this.P_Image.Name = "P_Image";
-            this.P_Image.Size = new System.Drawing.Size(100, 50);
-            this.P_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.P_Image.TabIndex = 6;
-            this.P_Image.TabStop = false;
-            this.P_Image.MouseDown += new System.Windows.Forms.MouseEventHandler(this.P_Image_MouseDown);
-            this.P_Image.MouseMove += new System.Windows.Forms.MouseEventHandler(this.P_Image_MouseMove);
-            this.P_Image.MouseUp += new System.Windows.Forms.MouseEventHandler(this.P_Image_MouseUp);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1222,6 +1220,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.M_PrevSize)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.P_FlowLayout.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.P_Image)).EndInit();
             this.P_ButtonLayout.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
@@ -1234,7 +1233,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelYNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelXNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.P_Image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
