@@ -6,9 +6,11 @@
 このプログラムには  
 MicroTimer(CodeProjectOpenLicense) : http://www.codeproject.com/Articles/98346/Microsecond-and-Millisecond-NET-Timer  
 CircularBuffer(ApacheLicense) : https://github.com/ufcpp/UfcppSample/blob/master/Chapters/Algorithm/Collections/CircularBuffer.cs  
+DirectShowLib(LGPLv2) :
+http://directshownet.sourceforge.net/  
 を使用しております。  
 CodeProjectOpenLicenseに関してはCPOL.htmlを参照してください。  
-ApacheLicenseはLICENSE.txtを参照してください。  
+ApacheLicense,LGPLv2はLICENSEを参照してください。  
 このプログラム自体はMITライセンスです。  
 ただコレをどこで使ったよって@surigomaxxxxxxxとかに投げたり、コレ使ったよってこのページのリンクを書いてくれると僕が死ぬほど喜びます。
 
@@ -36,8 +38,9 @@ ApacheLicenseはLICENSE.txtを参照してください。
 ## 使用ライブラリ
 ### Nugetから
 * NAudio
-* DirectShowLib
+* MathNet
 
 ### Webから
+* DirectShowLib(LGPLv2) : http://directshownet.sourceforge.net/
 * MicroTimer(CPOL) : http://www.codeproject.com/Articles/98346/Microsecond-and-Millisecond-NET-Timer  
 * CircularBuffer(ApacheLicense) : https://github.com/ufcpp/UfcppSample/blob/master/Chapters/Algorithm/Collections/CircularBuffer.cs
